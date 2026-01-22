@@ -356,8 +356,7 @@ Just add your API key and you're ready to identify insects! 🦋
 ---
 
 ## 📝 License
-
-Built with v0 by Vercel. Uses Insect.id API by Kindwise.
+ Uses Insect.id API by Kindwise.
 
 ---
 
