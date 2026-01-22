@@ -22,9 +22,26 @@ export interface InsectResult {
 }
 
 export interface IdentificationDetails {
-  results: InsectResult[];
   access_token: string;
-  custom_id?: string;
+  model_version?: string;
+  custom_id?: string | null;
+  input?: {
+    images: string[];
+    datetime: string;
+    latitude: number | null;
+    longitude: number | null;
+  };
+  result: {
+    is_insect: {
+      binary: boolean;
+      threshold: number;
+      probability: number;
+    };
+    classification: {
+      suggestions: InsectResult[];
+    };
+  };
+  status: string;
 }
 
 export interface UsageInfo {

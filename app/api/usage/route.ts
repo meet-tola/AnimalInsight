@@ -8,7 +8,7 @@ export async function GET() {
       usage,
     });
   } catch (error) {
-    console.error('[v0] Usage info error:', error);
+    console.error('Usage info error:', error);
     return Response.json(
       {
         error:

@@ -43,13 +43,13 @@ export default function UploadPage({ onImageSelected, onBack }: UploadPageProps)
         }
 
         const data = await response.json();
-        console.log('[v0] Identification results:', data);
+        console.log('Identification results:', data);
 
         // Pass the results along with the image
         setIsAnalyzing(false);
         onImageSelected(result, file, data.results, data.accessToken);
       } catch (error) {
-        console.error('[v0] Identification error:', error);
+        console.error('Identification error:', error);
         setIsAnalyzing(false);
         const errorMsg =
           error instanceof Error ? error.message : 'Failed to analyze image';

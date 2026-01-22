@@ -19,7 +19,7 @@ export async function GET(request: Request) {
       results,
     });
   } catch (error) {
-    console.error('[v0] Search error:', error);
+    console.error('Search error:', error);
     return Response.json(
       {
         error:

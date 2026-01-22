@@ -1,4 +1,4 @@
-# InsectID - Real API Integration Complete
+# Animal Insight - Real API Integration Complete
 
 Your insect identification app now uses the **real Insect.id (Kindwise) API** for accurate species identification.
 
@@ -58,7 +58,7 @@ Add: INSECT_ID_API_KEY=your_key_from_insect.kindwise.com
 ### Code Quality
 - ✅ Type-safe with TypeScript
 - ✅ Clean component architecture
-- ✅ Console logging with [v0] prefix
+- ✅ Console logging with prefix
 - ✅ Best practices throughout
 - ✅ Well-documented
 

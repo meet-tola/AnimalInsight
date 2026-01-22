@@ -39,7 +39,7 @@ export default function Home() {
         // Filter out entries with invalid File objects
         setSavedInsects(parsed.filter((item: SavedInsect) => item.id && item.commonName));
       } catch (e) {
-        console.log('[v0] Could not parse saved insects');
+        console.log('Could not parse saved insects');
       }
     }
   }, []);
@@ -92,7 +92,7 @@ export default function Home() {
                 : 'text-muted-foreground hover:text-foreground'
             }`}
           >
-            InsectID
+            Animal Insight
           </button>
 
           <div className="flex items-center gap-4">
